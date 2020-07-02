@@ -1,0 +1,14 @@
+public class Hello{
+
+
+public static void Printer(string names[] args){
+
+
+System.out.println("Hello world");
+
+
+}
+
+
+
+}
