@@ -1,0 +1,25 @@
+
+INHERITANCE
+----------
+-> Child and parent
+
+
+-> The child inherits from the parent.
+
+extends -> Key word for inheritance
+
+-> The attributes to be inherited ---> protected attribute;
+
+constructor for the superclass/BaseClass
+---------------------------------------
+Super(attribute1, attribute2);
+
+
+
+-> Class cannot do multiple extends(Cannot inherit from multiple classes)
+--> Interfaces are provided for that;
+
+
+
+
+
