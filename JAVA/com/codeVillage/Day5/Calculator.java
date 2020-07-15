@@ -1,36 +1,38 @@
-package com.codeVillage.Day5;
-
-
+package com.thecodevillage.day5;
 
 public class Calculator {
-    public static void main(String[] args)
 
-    {
-        int num = 56;
-        int num2 = 90;
+    public static void main(String[] args){
+        int a = 300;
+        int b  = 36;
 
-        System.out.println("1.Addition:"+addition(num, num2));
-        System.out.println("2.Subtraction:"+subtraction(num, num2));
-        System.out.println("3.Multiplication:"+multiplication(num, num2));
-        System.out.println("4.Modulus:"+mod(num, num2));
+        int sum = 0;
+        int multp = 0;
+        int divi = 0;
+        int subt = 0;
+        int modul = 0;
+
+        sum = a +b;
+        subt = a -b;
+        divi = a / b;
+        multp = a * b;
+        modul = a % b;
+
+        System.out.println("Sum: \n"+sum);
+        System.out.println("Mult: \n"+multp);
+        System.out.println("Div: \n"+divi);
+        System.out.println("Subt: \n"+subt);
+        System.out.println("Modulus: \n"+modul);
+
+
     }
 
-    public static int addition(int a, int b){
-        return a+b;
-    }
-    public static int subtraction(int a, int b){
-        return a-b;
-    }
-    public static int multiplication(int a, int b){
-        return a*b;
-    }
-    public static int mod(int a, int b){
-        return a%b;
-    }
+    // create a program
 
+    // takes 2 integers
 
+    //outputs
 
-
+    //sum, subtract , multiplication, division(/) and modulus (%)
 
 }
-

@@ -1,111 +1,90 @@
-package com.codeVillage.Day5;
-
+package com.thecodevillage.day5;
 import java.util.Scanner;
-
-public class student1 {
-
-    public static void main(String [] args)
-    {
-        //student data
-        String name = "";
-        String regNo;
+public class Student1 {
 
 
-        int math =0;
-        int english=0;
-        int swahili=0;
-        int science=0;
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        //functions/methods -re
+        String grade = "";
+        String name="";
+        String regNumber="";
+        int engMarks = 0;
+        int kiswaMarks = 0;
+        int mathMarks = 0;
+        int totalMarks = 0;
+        int mean = 0;
 
+        String mathGrade = "";
+        String engGrade = "";
+        String kiswaGrade = "";
 
-        Scanner sc = new Scanner(System.in);
-
-    System.out.println("ENTER YOUR DETAILS");
-    System.out.println("Name:");
-    name = sc.nextLine();
-
-    System.out.println("Reg NO:");
-    regNo = sc.nextLine();
-
-    System.out.println("\nENTER MARKS FOR:");
-    System.out.println("MATH:");
-    math = sc.nextInt();
-    System.out.println("ENGLISH:");
-    english = sc.nextInt();
-    System.out.println("KISWAHILI:");
-    swahili = sc.nextInt();
-    System.out.println("SCIENCE:");
-    science = sc.nextInt();
-
-
-    double mean = 0;
-    double sum = math + english + swahili + science;
-
-    mean = sum/4;
-
-        System.out.println("\n\n\n\n\n\n\n\n\n");
-        System.out.println("**********************");
-        System.out.println("NAME: "+ name);
-        System.out.println("REG NO: " + regNo);
-        System.out.println("***********************");
-        System.out.println("SUBJECT \t SCORE \t GRADE");
-        System.out.println("MATH:\t \t\t" + math+"\t    " + grader(math));
-        System.out.println("ENGLISH:\t    " + english +"\t    "+ grader(english));
-        System.out.println("KISWAHILI:\t    " + swahili+"      "+ grader(swahili));
-        System.out.println("SCIENCE::      \t"+ science + "  \t" + grader(science));
-        System.out.println("************************");
-        System.out.println("MEAN::" + mean + "\t");
-        System.out.println("GRADE::" + " " + Meangrader(mean));
-        System.out.println("************************\n\n\n\n\n\n");
-
-        print("Implemented the string function");
-
+        System.out.println(" Enter your Name ");
+        name = scanner.nextLine();
+        System.out.println(" Enter your Reg No ");
+        regNumber = scanner.nextLine();
+        System.out.println(" Enter ENG Marks");
+        engMarks = scanner.nextInt();
+        System.out.println(" Enter KISWA Marks");
+        kiswaMarks = scanner.nextInt();
+        System.out.println(" Enter MATH Marks");
+        mathMarks = scanner.nextInt();
+        totalMarks = kiswaMarks + engMarks + mathMarks;
+        mean = totalMarks / 3;
+        grade = getGrade(mean);
+        print("Name :" +name);
+        print("Reg No :" +regNumber);
+        print("MATH :" +mathMarks + " "+getGrade(mathMarks));
+        print("ENG :" +engMarks + " "+getGrade(engMarks));
+        print("KISW :" +kiswaMarks + " "+ getGrade(kiswaMarks));
+        print("Tot Marks :" +totalMarks);
+        print("Mean Score :" +mean);
+        print("Mean Grade :" +grade);
     }
 
-
-    public static void print(String message){
-
+    static String getGrade(int mean){
+         String grade="";
+        if(mean >=0 && mean <= 40)
+            grade = "D";
+        else if(mean > 40 && mean <= 60)
+            grade = "C";
+        else if(mean > 60  && mean <= 80)
+            grade = "B";
+        else if(mean > 80 && mean <= 100) {
+            grade = "A";
+        }
+        else
+            grade = "F";
+        return grade;
+    }
+    static void print(String message){
         System.out.println(message);
     }
 
+    //Car - Class
+    //increase speed-> accelerate
+    //stop -> brake
+    ///steering
 
+    //functions can take input
+    //return output
 
-    public static String grader(int a) {
+    //Ask the student to enter the following
+    //name
+    //regNo
+    //marks for -> MATH, ENG, KIS, SCI
 
-        if (a >= 0 && a <= 40) {
-            return "D";
-        }
-        if (a >= 41 && a <= 60) {
-            return "C";
-        }
-        if (a >= 61 && a <= 80) {
-            return "B";
-        }
-        if (a >= 81 && a <= 100) {
-            return "A";
-        }
-    return "None";
-    }
+    //do output
+    //student details
+    //each subject and score
+    //total marks
+    //mean grade
 
-
-
-    public static String Meangrader(double a) {
-
-        if (a >= 0 && a <= 40) {
-            return "D";
-        }
-        if (a >= 41 && a <= 60) {
-            return "C";
-        }
-        if (a >= 61 && a <= 80) {
-            return "B";
-        }
-        if (a >= 81 && a <= 100) {
-            return "A";
-        }
-        return "NOT VALID MARK";
-    }
-
-
+    //guide for mean grade
+    //0 -40 D
+    //40-60 C
+    //60 - 80 B
+    //80 -100 A
 
 
 }
