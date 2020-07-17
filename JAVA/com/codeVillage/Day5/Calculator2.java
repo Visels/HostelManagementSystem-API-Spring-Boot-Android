@@ -5,7 +5,7 @@ package com.thecodevillage.day5;
 
 import java.util.Scanner; //
 
-public class calculator2 {
+public class Calculator2 {
 
     public static void main(String[] args){
         int a = 0;

@@ -1,8 +1,8 @@
-package com.thecodevillage.day5;
+package com.codeVillage.Day5;
 
 import java.util.Scanner;
 
-public class Student {
+public class student {
 
     public static void main(String[] args){
         String name= "";

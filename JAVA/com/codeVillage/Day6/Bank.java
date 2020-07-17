@@ -1,5 +1,6 @@
 package com.codeVillage.Day6;
 
+
 import java.util.Scanner;
 
 
@@ -267,6 +268,7 @@ public class Bank {
 
     }
 
+    public static void loansWindow(){};
 
 
     //BANK FUNCTIONS

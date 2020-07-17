@@ -1,6 +1,6 @@
 package com.thecodevillage.day4;
 
-public class Student{
+public class student{
 
   public static void main(String[] args){
     String name= "John Doe";
