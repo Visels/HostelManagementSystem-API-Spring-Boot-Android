@@ -8,7 +8,7 @@ public class CalculatorApp {
 
         Scanner sc = new Scanner(System.in);
 
-        var calc = new Calc();
+        Calc calc = new Calc();
 
         boolean appExit = false;
 

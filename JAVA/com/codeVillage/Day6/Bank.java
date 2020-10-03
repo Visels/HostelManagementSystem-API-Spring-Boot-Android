@@ -89,18 +89,18 @@ public class Bank {
         //Login window
         print("\n\n");
         print("\t\t                                   **************                                       ");
-        print("\t\t                                  * LUBIRENT BANK *                                     ");
+        print("\t\t                                  * SAMPLE BANK *                                     ");
         print("\t\t**************************************************************************************");
         print("\t\t*                                                                         [ 0 - EXIT]*");
         print("\t\t*                                                                                    *");
         print("\t\t*                                                                                    *");
-        print("\t\t*                                    *  LOGIN  *                                     *");
+        print("\t\t*                                      *  LOGIN  *                                   *");
         print("\t\t*                                                                                    *");
         print("\t\t*                                                                                    *");
-        print("\t\t*                              ACCOUNT NO: [ 897873-234-45 ]                         *");
+        print("\t\t*                              ACCOUNT NO: [ __________ ]                            *");
         print("\t\t*                                                                                    *");
         print("\t\t*                                                                                    *");
-        print("\t\t*                              PASSWORD:[____________]                               *");
+        print("\t\t*                              PASSWORD:   [ ___________ ]                           *");
         print("\t\t*                                                                                    *");
         print("\t\t*                                                                                    *");
         print("\t\t*                                                                                    *");
@@ -523,6 +523,9 @@ public class Bank {
 
 
         }
+
+
+
 
 
 
