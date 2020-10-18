@@ -1,9 +1,0 @@
------ENUMS---
-
--> Used to store constant things
-
-
-
----HASH MAPS----
-
--> Used to store pairs, in key and value form
